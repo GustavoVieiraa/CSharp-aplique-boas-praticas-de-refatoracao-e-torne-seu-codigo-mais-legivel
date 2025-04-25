@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Alura.Adopet.API", "Alura.A
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Alura.Adopet.Console", "Alura.Adopet.Console\Alura.Adopet.Console.csproj", "{CDC4860C-35AD-4396-B20F-547C44F680CC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercicios", "Exercicios\Exercicios.csproj", "{9D5F539E-1182-47A2-A73B-E2D40DEA5B83}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alura.Exercicios", "Exercicios\Alura.Exercicios.csproj", "{9D5F539E-1182-47A2-A73B-E2D40DEA5B83}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
