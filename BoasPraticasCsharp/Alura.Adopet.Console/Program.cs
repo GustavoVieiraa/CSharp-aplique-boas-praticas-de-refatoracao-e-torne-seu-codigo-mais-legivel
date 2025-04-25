@@ -2,7 +2,7 @@
 using System.Net.Http.Json;
 using Alura.Adopet.Console;
 
-// cria instância de HttpClient para consumir API Adopet
+// na linha abaixo cria-se uma instância de HttpClient para consumir API Adopet.
 HttpClient client = ConfiguraHttpClient("http://localhost:5057");
 Console.ForegroundColor = ConsoleColor.Green;
 try
@@ -27,7 +27,6 @@ try
             await list.ListaDadosPetsDaAPIAsync();
             break;
         default:
-            // exibe mensagem de comando inválido
             Console.WriteLine("Comando inválido!");
             break;
     }
@@ -52,9 +51,14 @@ HttpClient ConfiguraHttpClient(string url)
     _client.BaseAddress = new Uri(url);
     return _client;
 }
-
-
-
+Task<HttpResponseMessage> CreatePetAsync(Pet pet)
+{
+    HttpResponseMessage? response = null;
+    using (response = new HttpResponseMessage())
+    {
+        return client.PostAsJsonAsync("pet/add", pet);
+    }
+}
 async Task<IEnumerable<Pet>?> ListPetsAsync()
 {
     HttpResponseMessage response = await client.GetAsync("pet/list");

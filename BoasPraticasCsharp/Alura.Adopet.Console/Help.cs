@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Alura.Adopet.Console
+﻿namespace Alura.Adopet.Console
 {
+    [DocComando(instrucao: "help",
+     documentacao: "adopet help comando que exibe informações da ajuda.")]
     internal class Help
     {
         public void ExibeDocumentacao(string[] parametros)
@@ -21,6 +17,7 @@ namespace Alura.Adopet.Console
                 System.Console.WriteLine($" adopet import <ARQUIVO> comando que realiza a importação do arquivo de pets.");
                 System.Console.WriteLine($" adopet show <ARQUIVO> comando que exibe no terminal o conteúdo do arquivo importado.");
                 System.Console.WriteLine($" adopet list comando que exibe no terminal o conteúdo cadastrado na base de dados da AdoPet." + "\n");
+
             }
             // exibe o help daquele comando específico
             else if (parametros.Length == 2)
