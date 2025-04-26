@@ -20,7 +20,7 @@
   <h1>C#: aplique boas práticas de refatoração e torne seu código mais legível 🔆</h1>
 </div>
 <p align="right">
-  <img loading="lazy" src="https://img.shields.io/badge/CARGA_HORARIA-8_HORAS-blue?style=for-the-badge"/>
+  <img loading="lazy" src="https://img.shields.io/badge/CARGA_HORARIA-10_HORAS-blue?style=for-the-badge"/>
   <img loading="lazy" src="http://img.shields.io/static/v1?label=STATUS&message=FINALIZADO!&color=GREEN&style=for-the-badge"/>
 </p>
 
