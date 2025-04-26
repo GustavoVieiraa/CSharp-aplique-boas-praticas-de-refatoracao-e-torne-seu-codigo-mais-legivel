@@ -1,4 +1,5 @@
-﻿namespace Alura.Adopet.Console.Comandos
+﻿
+namespace Alura.Adopet.Console.Comandos
 {
     [AttributeUsage(AttributeTargets.Class)]
     public class DocComando : Attribute
